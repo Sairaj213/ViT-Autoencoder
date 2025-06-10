@@ -1,11 +1,11 @@
-# Transformer Autoencoder for Image Reconstruction
+# 📷 Transformer Autoencoder for Image Reconstruction
+<br>
 
-This project implements a Transformer-based Autoencoder using TensorFlow and Keras to reconstruct images from the CIFAR-10 dataset. The architecture uses a Vision Transformer (ViT) style of patching images, encoding them with Transformer blocks, and then decoding them back into images.
-
+This is an Autoencoder architecture built with Transformer and Keras, for image reconstruction on the CIFAR-10 dataset. The architecture uses a Vision Transformer (ViT) style of patching images, encoding them with Transformer blocks, and then decoding them back into images.
+<br>
 ## Project Structure
 
 ```
-.
 ├── run.py                  # Main entry point to run the project
 ├── config.py               # All hyperparameters and file paths
 ├── data_utils.py           # Data loading and preprocessing for CIFAR-10
@@ -18,11 +18,9 @@ This project implements a Transformer-based Autoencoder using TensorFlow and Ker
 
 ## Setup and Installation
 
-Follow these steps to set up the project environment.
-
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/Sairaj213/ViT-Autoencoder.git
     cd transformer_autoencoder
     ```
 
@@ -64,12 +62,8 @@ All key parameters can be modified in `config.py`. This includes:
 
 To test with your own image, replace `sample_image.jpg` with your image and update the `SAMPLE_IMAGE_PATH` in `config.py`.
 
-## Outputs
 
 After running `run.py`, the following files will be generated in your project directory:
 - `transformer_autoencoder.keras`: The saved, trained Keras model.
 - `training_history.png`: A plot of the training and validation loss over epochs.
 - `test_reconstructions.png`: A comparison of original and reconstructed images from the test set.
-
-![Test Reconstructions](test_reconstructions.png)
-![Training History](training_history.png)
