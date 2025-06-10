@@ -13,7 +13,6 @@ This project implements a Transformer-based Autoencoder using TensorFlow and Ker
 ├── train.py                # Handles the model training loop and saving logic
 ├── evaluation.py           # Functions for visualizing results and calculating metrics
 ├── requirements.txt        # Project dependencies
-├── sample_image.jpg        # A sample image for evaluation
 └── README.md               # This file
 ```
 
